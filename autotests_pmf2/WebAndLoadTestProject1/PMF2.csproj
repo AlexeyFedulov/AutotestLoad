@@ -1,0 +1,145 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7766766F-BA85-498F-8158-837D534AB7DB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebAndLoadTestProject1</RootNamespace>
+    <AssemblyName>WebAndLoadTestProject1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TestProjectType>WebTest</TestProjectType>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.LoadTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OpenReestr2\Визуализация иерархии КТ\Ktchart.cs" />
+    <Compile Include="OpenReestr2\Справочники\Course.cs" />
+    <Compile Include="OpenReestr2\Справочники\Contractor.cs" />
+    <Compile Include="OpenReestr2\Аналитика\Analysis.cs" />
+    <Compile Include="OpenReestr2\База знаний и документов\Docsearch.cs" />
+    <Compile Include="OpenReestr2\База знаний и документов\Doclib.cs" />
+    <Compile Include="OpenReestr2\База знаний и документов\LegalDoc.cs" />
+    <Compile Include="OpenReestr2\База знаний и документов\Lesson.cs" />
+    <Compile Include="OpenReestr2\База знаний и документов\Docpanel.cs" />
+    <Compile Include="OpenReestr2\Цели и показатели\KPIHierarhy.cs" />
+    <Compile Include="OpenReestr2\Цели и показатели\GoalHierarhy.cs" />
+    <Compile Include="OpenReestr2\Цели и показатели\GoalTree.cs" />
+    <Compile Include="OpenReestr2\Цели и показатели\Kpi.cs" />
+    <Compile Include="OpenReestr2\Цели и показатели\Goal.cs" />
+    <Compile Include="OpenReestr2\Управление персоналом\CourseWork.cs" />
+    <Compile Include="OpenReestr2\Коммуникации\Lov.cs" />
+    <Compile Include="OpenReestr2\Коммуникации\Meeting.cs" />
+    <Compile Include="OpenReestr2\Мониторинг и контроль\ConsolidatedChangeRequest.cs" />
+    <Compile Include="OpenReestr2\Объекты управления\ActivityResult.cs" />
+    <Compile Include="OpenReestr2\Объекты управления\Contract.cs" />
+    <Compile Include="OpenReestr2\Объекты управления\Event.cs" />
+    <Compile Include="HelperClass.cs" />
+    <Compile Include="OpenReestr2\Объекты управления\initiative.cs" />
+    <Compile Include="OpenReestr2\Объекты управления\NacProectCoded.cs" />
+    <Compile Include="OpenReestr2\Объекты управления\IerarxiyaProgramm.cs" />
+    <Compile Include="OpenReestrCoded.cs" />
+    <Compile Include="OpenReestr2\Объекты управления\Potfolio.cs" />
+    <Compile Include="OpenReestr2\Объекты управления\Project.cs" />
+    <Compile Include="OpenReestr2\Объекты управления\Point.cs" />
+    <Compile Include="OpenReestr2\Коммуникации\Order.cs" />
+    <Compile Include="OpenReestr2\Управление персоналом\OrgStruct.cs" />
+    <Compile Include="OpenReestr2\Справочники\OrgUnit.cs" />
+    <Compile Include="OpenReestr2\Справочники\Organization.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="OpenReestr2\TestBase.cs" />
+    <Compile Include="OpenReestr2\RandomVProgramPokaz.cs" />
+    <Compile Include="OpenReestr2\Объекты управления\Progr.cs" />
+    <Compile Include="OpenReestr2\Мониторинг и контроль\StatusReport.cs" />
+    <Compile Include="OpenReestr2\Коммуникации\Question.cs" />
+    <Compile Include="OpenReestr2\Управление рисками\Risk.cs" />
+    <Compile Include="OpenReestr2\Управление рисками\RiskMitigation.cs" />
+    <Compile Include="OpenReestr2\Управление рисками\RiskResponding.cs" />
+    <Compile Include="OpenReestr2\База знаний и документов\Summary.cs" />
+    <Compile Include="OpenReestr2\Отчеты\ReportCenter.cs" />
+    <Compile Include="OpenReestr2\Справочники\User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LoadTest1.loadtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="OpenReestr.webtest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="pokaz.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Progrs.webtest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
